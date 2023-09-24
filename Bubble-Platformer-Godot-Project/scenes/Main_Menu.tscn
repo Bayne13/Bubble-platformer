@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bemmmgewfc7vv"]
+
+[ext_resource type="Script" path="res://scripts/Main_Menu.gd" id="1_ksvqc"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_ksvqc")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_right = 1153.0
+offset_bottom = 26.0
+theme_type_variation = &"HeaderLarge"
+text = "2D Platformer"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 504.0
+offset_top = 232.0
+offset_right = 647.0
+offset_bottom = 284.0
+text = "Start"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
